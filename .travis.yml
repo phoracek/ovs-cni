@@ -1,0 +1,15 @@
+sudo: required
+
+language: go
+
+go: 1.10.x
+go_import_path: kubevirt.io/ovs-cni
+
+install:
+  - sudo apt-get update
+  - sudo apt-get install -y openvswitch-switch
+
+script:
+  - make build
+  - sudo -E make test
+  - make docker-build
