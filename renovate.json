@@ -1,0 +1,44 @@
+{
+  "extends": [
+    ":gitSignOff",
+    ":dependencyDashboard"
+  ],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": [
+    "main"
+  ],
+  "prConcurrentLimit": 3,
+  "groupName": "all dependencies",
+  "groupSlug": "all",
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "labels": [
+    "release-note-none"
+  ],
+  "ignorePaths": [
+    "automation/**",
+    "cluster/**",
+    "hack/**",
+    "tests/**"
+  ],
+  "packageRules": [
+    {
+      "groupName": "all dependencies bump on main",
+      "groupSlug": "all",
+      "matchBaseBranches": [
+        "main"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ]
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true,
+  "assigneesFromCodeOwners": true,
+  "separateMajorMinor": false
+}
+
