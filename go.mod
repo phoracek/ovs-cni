@@ -1,22 +1,22 @@
 module github.com/k8snetworkplumbingwg/ovs-cni
 
 require (
-	github.com/Mellanox/sriovnet v1.0.2
-	github.com/containernetworking/cni v1.0.1
-	github.com/containernetworking/plugins v1.0.1
-	github.com/golang/glog v1.1.0
-	github.com/imdario/mergo v0.3.12
-	github.com/j-keck/arping v1.0.2
-	github.com/k8snetworkplumbingwg/network-attachment-definition-client v0.0.0-20200626054723-37f83d1996bc
-	github.com/onsi/ginkgo v1.16.4
-	github.com/onsi/gomega v1.31.0
-	github.com/ovn-org/libovsdb v0.6.0
+	github.com/Mellanox/sriovnet v1.2.0
+	github.com/containernetworking/cni v1.2.3
+	github.com/containernetworking/plugins v1.5.1
+	github.com/golang/glog v1.2.2
+	github.com/imdario/mergo v1.0.0
+	github.com/j-keck/arping v1.0.3
+	github.com/k8snetworkplumbingwg/network-attachment-definition-client v1.7.1
+	github.com/onsi/ginkgo/v2 v2.19.1
+	github.com/onsi/gomega v1.34.1
+	github.com/ovn-org/libovsdb v0.7.0
 	github.com/pkg/errors v0.9.1
-	github.com/vishvananda/netlink v1.1.1-0.20210330154013-f5de75959ad5
+	github.com/vishvananda/netlink v1.2.1-beta.2
 	k8s.io/api v0.30.3
 	k8s.io/apimachinery v0.30.3
 	k8s.io/client-go v0.30.3
-	kubevirt.io/qe-tools v0.1.6
+	kubevirt.io/qe-tools v0.1.8
 )
 
 require (
